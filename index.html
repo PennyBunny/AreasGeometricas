@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/areas.css">
+</head>
+<body>
+    <div class="contenedor">
+         <h1> AREAS GEOMETRICAS</h1> 
+         <!-- para el contenido -->
+         <div id="formularioContenedor">
+             <label for="figura"> Seleccione una figura geometrica</label>
+             <select name="figura" id="figura" onchange="mostrar()">
+                <option value="circulo">Circulo</option> 
+                <option value="cuadrado">Cuadrado</option> 
+                <option value="rectangulo">Rectangulo</option>
+                <option value="triangulo">Triangulo</option>  
+                <option value="salir">Salir</option>
+             </select>
+             <!-- area del cuadrado -->
+             <div id="cuadradoForm" class="formulario">
+                <div>
+                    <img src="imagenes/cuadrado.png" alt="Cuadrado" title="">
+                </div>
+                <label for="lado">Lado:</label>
+                <input type="number" id="Lado" placeholder="Ingrese Lado">
+             </div>
+             <!-- area del circulo -->
+             <div id="circuloForm" class="formulario">
+                <div>
+                    <img src="imagenes/circulo.png" alt="Circulo" title="">
+                </div>
+                <label for="radio">Radio:</label>
+                <input type="number" id="radio" placeholder="Ingrese el radio">
+             </div>
+             <!-- area del rectangulo -->
+             <div id="rectanguloForm" class="formulario">
+                <div>
+                    <img src="imagenes/rectangulo.png" alt="Cuadrado" title="">
+                </div>
+                <label for="base">Base:</label>
+                <input type="number" id="base" placeholder="Ingrese la base">
+                <label for="altura">Altura:</label>
+                <input type="number" id="altura" placeholder="Ingrese la altura">
+             </div>
+             <!-- area del triangulo -->
+             <div id="trianguloForm" class="formulario">
+                <div>
+                    <img src="imagenes/triangulo.png" alt="Triangulo" title="">
+                </div>
+                <label for="B">Base:</label>
+                <input type="number" id="B" placeholder="Ingrese la base">
+                <label for="A">Altura:</label>
+                <input type="number" id="A" placeholder="Ingrese la altura">
+             </div>
+             <!-- calcula el area de la figura geometrica -->
+             <button onclick="calcular()">Calcular Area</button>
+         </div> 
+         <!-- muestra el resultado -->
+         <div id="resultado"></div>
+
+         <!-- bloque despedida -->
+         <div id="despedidaContainer">
+                <img id="despedidaImagen" src="" alt="" title="">
+                <p>TERMINE DE AYUDARTE Y AHORA ME DEJAS..... ¡¡¡AAAAHHH!!!!</p>
+         </div>
+
+    </div>
+
+    <script src="js/areas.js"></script>
+</body>
+</html>
